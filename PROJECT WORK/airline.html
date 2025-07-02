@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Airlines</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #00509e; padding: 10px 0; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: #fff; padding: 80px 20px; text-align: center; }
+        .search-form, .booking-form { background: #f4f4f4; padding: 30px 20px; max-width: 500px; margin: 30px auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        .search-form input, .search-form select, .search-form button,
+        .booking-form input, .booking-form select, .booking-form button { padding: 10px; margin: 5px 0; width: 100%; }
+        .destinations, .contact { max-width: 900px; margin: 30px auto; padding: 20px; }
+        .destinations h2, .contact h2 { color: #003366; }
+        .footer { background: #003366; color: #fff; text-align: center; padding: 15px 0; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SkyHigh Airlines</h1>
+        <p>Your journey begins here</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Book a Flight</a>
+        <a href="#">Destinations</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Fly to Your Dream Destination</h2>
+        <p>Book affordable flights to over 100 destinations worldwide.</p>
+    </section>
+    <section class="search-form">
+        <form>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="City or Airport" required>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="City or Airport" required>
+            <label for="depart">Departure Date:</label>
+            <input type="date" id="depart" name="depart" required>
+            <label for="return">Return Date:</label>
+            <input type="date" id="return" name="return">
+            <label for="passengers">Passengers:</label>
+            <select id="passengers" name="passengers">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+            </select>
+            <button type="submit">Search Flights</button>
+        </form>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <h2>Book Your Flight</h2>
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="booking-from">From:</label>
+            <input type="text" id="booking-from" name="booking-from" placeholder="City or Airport" required>
+
+            <label for="booking-to">To:</label>
+            <input type="text" id="booking-to" name="booking-to" placeholder="City or Airport" required>
+
+            <label for="booking-depart">Departure Date:</label>
+            <input type="date" id="booking-depart" name="booking-depart" required>
+
+            <label for="booking-return">Return Date:</label>
+            <input type="date" id="booking-return" name="booking-return">
+
+            <label for="seat">Seat Preference:</label>
+            <select id="seat" name="seat">
+                <option value="any">Any</option>
+                <option value="window">Window</option>
+                <option value="aisle">Aisle</option>
+                <option value="middle">Middle</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <ul>
+            <li>New York, USA</li>
+            <li>London, UK</li>
+            <li>Paris, France</li>
+            <li>Tokyo, Japan</li>
+            <li>Dubai, UAE</li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@skyhighairlines.com</p>
+        <p>Phone: +1 800 123 4567</p>
+        <p>Address: 123 Aviation Ave, City, Country</p>
+    </section>
+    <div class="footer">
+        &copy; 2025 SkyHigh Airlines. All rights reserved.
+    </div>
+</body>
+</html>

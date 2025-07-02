@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz Airlines</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #660000; color: #fff; padding: 20px 0; text-align: center; }
+        nav { background: #693202; padding: 10px 0; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: #fff; padding: 80px 20px; text-align: center; }
+        .search-form, .booking-form { background: #f4f4f4; padding: 30px 20px; max-width: 500px; margin: 30px auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        .search-form input, .search-form select, .search-form button,
+        .booking-form input, .booking-form select, .booking-form button { padding: 10px; margin: 5px 0; width: 100%; }
+        .destinations, .contact { max-width: 900px; margin: 30px auto; padding: 20px; }
+        .destinations h2, .contact h2 { color: #693202; }
+        .footer { background: #660000; color: #fff; text-align: center; padding: 15px 0; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AKAWAABA AIRLINES</h1>
+        <p>Your journey begins here</p>
+    </header>
+    <nav>
+        <a href="file:///C:/Users/MR.%20HERTZ/OneDrive/Desktop/PROJECT%20WORK/home.html">Home</a>
+        <a href="file:///C:/Users/MR.%20HERTZ/OneDrive/Desktop/PROJECT%20WORK/book.html">Book a Flight</a>
+        <a href="#">Destinations</a>
+        <a href="file:///C:/Users/MR.%20HERTZ/OneDrive/Desktop/PROJECT%20WORK/insightabouttcpip.html">About Us</a>
+        <a href="file:///C:/Users/MR.%20HERTZ/OneDrive/Desktop/PROJECT%20WORK/CONTACT.html">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Fly to Your Dream Destination</h2>
+        <p><marquee>Book affordable flights to over 100 destinations worldwide.......</marquee></p>
+    </section>
+    <section class="search-form">
+        <form>
+            <label for="from"><b>From:</b></label>
+            <input type="text" id="from" name="from" placeholder="City or Airport" required>
+            <label for="to"><b>To:</b></label>
+            <input type="text" id="to" name="to" placeholder="City or Airport" required>
+            <label for="depart"><b>Departure Date:</b></label>
+            <input type="date" id="depart" name="depart" required>
+            <label for="return"><b>Return Date:</b></label>
+            <input type="date" id="return" name="return">
+            <label for="passengers"><b>Passengers:</b></label>
+            <select id="passengers" name="passengers">
+                <option value="1">1 Adult</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+            </select>
+            <button type="submit" color="">Search Flights</button>
+        </form>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <h2>Book Your Flight</h2>
+        <form>
+            <label for="fullname"><b>Full Name:</b></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email"><b>Email Address:</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="booking-from"><b>From:</b></label>
+            <input type="text" id="booking-from" name="booking-from" placeholder="City or Airport" required>
+
+            <label for="booking-to"><b>To:</b></label>
+            <input type="text" id="booking-to" name="booking-to" placeholder="City or Airport" required>
+
+            <label for="booking-depart"><b>Departure Date:</b></label>
+            <input type="date" id="booking-depart" name="booking-depart" required>
+
+            <label for="booking-return"><b>Return Date:</b></label>
+            <input type="date" id="booking-return" name="booking-return">
+
+            <label for="seat"><b>Seat Preference:</b></label>
+            <select id="seat" name="seat">
+                <option value="any">Any</option>
+                <option value="window">Window</option>
+                <option value="aisle">Aisle</option>
+                <option value="middle">Middle</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <ul>
+            <li>New York, USA</li>
+            <li>London, UK</li>
+            <li>Paris, France</li>
+            <li>Tokyo, Japan</li>
+            <li>Dubai, UAE</li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@akwaabaairlines.com</p>
+        <p>Phone: +233 554 568 528</p>
+        <p>Address: KTU Campus/ Accra City, Country</p>
+    </section>
+    <div class="footer">
+        &copy; 2025 Akwaaba Airlines. All rights reserved.
+    </div>
+</body>
+</html>
